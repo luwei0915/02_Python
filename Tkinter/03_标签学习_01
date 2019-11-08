@@ -1,4 +1,4 @@
---文字在左，图片在右
+# --文字在左，图片在右
 from tkinter import *
 
 root = Tk()
