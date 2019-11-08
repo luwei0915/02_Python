@@ -1,0 +1,21 @@
+import time as t
+class MyTime:
+    def start(self):
+        self.start = t.localtime()
+        print("计时开始")
+    def stop(self):
+        self.stop = t.localtime()
+        self._calc()
+        print("计时结束")
+    def _calc(self):
+        self.last = []
+        self.say = "一共运行了："
+        for i in range(6):
+            self.last.append(self.stop[i] - self.start[i])
+            self.say += str(self.last[i])
+        print(self.say)
+t1 = MyTime()
+t1.start()
+for i in range(99999):
+    print(i)
+t1.stop()
