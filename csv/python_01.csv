@@ -1,0 +1,170 @@
+1,Built-in Functions 内置函数,BIF
+2,help(print),查看print的用法
+3,dir(__builtins__),查看内置函数列表
+4,print('let\'s go'),单引号输出let's go
+5,"print(""C:\\now:"")","打印""C:\now:""转义方法"
+6,"print(r""C:\now:"")","打印""C:\now:""原始字符串"
+7,print('''多行文本'''),打印多行文本自动换行
+8,random.randint(1，10),random模块从1-10随机生成一个数
+9,"n = int(input(""num:""))",接收键盘输入的一个数字赋值给n
+10,type(n),查看n的数据类型（type)
+11,isinstance(n，int),判断n是否是整型
+12,and、or、not,逻辑操作符
+13,elif,else + if 组合
+14,n = x if x<y else y,条件表达式求x、y的较小值给n
+15,assert 条件,判断当前条件是否正常(断言)
+16,"print(""xx""，end="""")",print输出不换行
+17,range([start，] stop [，step]),range用法
+18,"list.append(""n"")",向列表末尾添加一个元素
+19,list.clear(),清空列表
+20,list.copy(),复制列表
+21,"list.count(""n"")",元素n在列表出现的次数
+22,"list.extend([""m""，""n""])",多个元素扩展列表
+23,list.index(object [，start] [，stop]),查找元素在列表首次出现的位置
+24,"list.insert(i，""n"")",在列表指定位置i插入数据n
+25,list.pop(),删除列表最后一个元素并返回该元素(也可以index参数）
+26,"list.remove(""n"")",删除列表元素n(仅删除第一个）
+27,list.sort(),列表元素从小到大排序
+28,list.reverse(),列表反向排序
+29,del list[i],删除列表指定位置i的元素
+30,del list,删除整个列表
+31,list * 3,重复列表所有元素3次
+32,"""n"" (not) in list",判断n是否在列表
+33,len(list),求列表长度
+34,tup = (),创建一个空元组tup
+35,del tup,删除元组tup
+36,str.capitalize(),字符串首字母改为大写
+37,str.casefold(),字符串所有大写改小写
+38,str.center(n),字符串居中填充至长度n
+39,"str.count(""n""[，start[，end]])",在固定范围内返回字符n在字符串出现的次数
+40,"str.encode(encoding=""utf-8""，errors=""strict"")",以指定的格式对字符串进行编码
+41,"str.endswith(""sub""[，start[，end]])",在固定范围内判断字符串是否以sub结尾
+42,str.expandtabs([size=8]),"将字符串中的""\t""转换为空格，默认8个字符"
+43,"str.find(""n""[，start[，end]])",在指定范围内查找字符串，若存在返回index值，若不存在，返回-1
+44,"str.index(""n""[，start[，end]])",在指定范围内查找字符串，若存在返回index值，若不存在，则报异常
+45,str.isalnum(),如果字符串中至少有一个字符并且所有字符都是字母或数字则True否则False
+46,str.isalpha(),如果字符串中至少有一个字符并且所有字符都是字母则True否则False
+47,str.isdecimal(),如果字符串里面是十进制数字，则T否则F
+48,str.isdigit(),如果字符串只包含数字T/F
+49,str.islower(),字符串是纯字母且都为小写T/F
+50,str.isnumeric(),如果字符串只包含数字字符（包括汉字数字）T/F
+51,str.isspace(),"如果字符串只包含空格（""\t""也算)T/F"
+52,str.istitle(),如果字符串是标题化（首字母大写）T/F
+53,str.isupper(),字符串是纯字母且都为大写T/F
+54,"str.join(""aaabbb"")","以自己为分隔符插入到字符串""aaabbb""中"
+55,str.ljust(n),返回一个长度为n、居左对齐的字符串
+56,str.rjust(n),返回一个长度为n、居右对齐的字符串
+57,str.lower(),将字符串中大所有大写字母转为小写
+58,str.upper(),将字符串中大所有小写字母转为大写
+59,str.lstrip(),去掉字符串左边的所有空格
+60,str.rstrip(),去掉字符串右边的所有空格
+61,"str.partition(""sub"")","查找字符串中sub子串存在则以自己为切片将字符串分成三元组，不存在则返回(""str""，""""，"""")"
+62,str.replace(old，now[，count]),替换字符串中的字符
+63,"str.rfind(""n""[，start[，end]])",类似于find，不过从右查找
+64,"str.rindex(""n""[，start[，end]])",类似于index，不过从右查找
+65,"str.rpartition(""sub"")",类似于partition，不过从右边开始查找
+66,str.split（sub[，count]）,指定次数对字符串进行切片，分隔符sub
+67,str.splitlines(),以换行符为分隔符分割字符串为列表
+68,"str.startswith(""sub""[，start[，end]])",在固定范围内判断字符串是否以sub开头
+69,str.strip([chars]),删除字符串开头或结尾的字符（多次），默认空格
+70,str.swapcase(),翻转字符串中的大小写
+71,str.title(),标题化字符串（字符串中间若有空格，空格后继续标题化）
+72,str.zfill(length),左边用0填充字符串至长度
+73,"""{0}b{1}"".format(""a""，""c"")",字符串格式化format
+74,list(str),字符串转列表
+75,tuple(str),字符串转元组
+76,max(),求最大值
+77,min(),求最小值
+78,sorted(),默认排序
+79,for each in zip(str，str2):,zip（）两个队列两两对应组合成多个元组
+80,sum(),求和(元组、列表等）
+81,reversed（),翻转返回迭代器对象
+82,enumerate(),创建字符串、列表、元组与index构成的迭代器
+83,sorted.__doc__,查看sorted函数文档
+84,def test(*params)-->len(params),求函数收集参数的个数
+85,test(*list),将列表所有元素当做参数传递给test函数
+86,return 1，2，3,返回多个值为元组
+87,global，nonlocal,全局变量、非局部变量(闭包）
+88,f = lambda x:x*x,lambda带1个参数
+89,f = lambda x，y:x+y,lambda带2个参数
+90,f = filter([func，]params),过滤器
+91,f = map([func，]params),map处理
+92,dic2 = dic1.fromkeys(（key1，key2，key3）[，valueAll]),通过列表或元组元素为键创建字典
+93,list(dict.keys()),返回字典所有键为列表
+94,list(dict.values()),返回字典所有值为列表
+95,list(dict.items()),返回字典的键值对为二元组列表
+96,dict.get(key[，throws]),查找某个键的值，不存在返回None或自定义返回
+97,dict.clear(),清空字典
+98,dict.copy(),复制字典
+99,dict.pop(key),给定键弹出对应的值，并在字典中删除键值对
+100,dict.popitem(),弹出字典最后一组键值对，并删除
+101,dict.setdefault(key[，value]),查找某个键的值，不存在则添加
+102,dict.update({key:newValue}),更新字典键的值
+103,set(list),集合去重、排序（数字）
+104,set.add(item),给集合添加元素
+105,set.remove(item),集合删除元素
+106,set=frozenset({items}),创建不可变结合
+107,fd = f.read(),读取文件所有字符为字符串
+108,fd = f.readline(),读取文件一行为字符串
+109,fd = f.readlines(),读取文件所有行为列表
+110,"f = open(""1.txt""，""r+"")",打开文件1.txt
+111,f.close(),关闭打开的文件
+112,f.tell(),读取文件指针当前位置
+113,f.seek(0，0),读取文件指针移动到起始位置
+114,f.seek(offset，from) (offset：偏移量，from:0起始位置，1当前位置，2文件末尾）,f.seek()用法
+115,f.write(data),读取文件写入数据
+116,f.read().splitlines(),以换行符为分隔符读取文件
+117,n = random.randint(1，10),引入random模块产生随机数n
+118,os.getcwd(),os模块获取当前目录
+119,"os.chdir(""C:\\"")",os模块切换到C盘根目录
+120,os.listdir([path]),os模块查看目录下的文件
+121,"os.mkdir(""dir"")",os模块创建文件夹
+122,"os.rmdir(""dir"")",os模块删除文件夹
+123,"os.makedirs(r""./dir1/dir2/dir3"")",os模块递归创建文件夹
+124,"os.removedirs(r""./dir1/dir2/dir3"")",os模块递归删除空目录
+125,"os.remove(""1.txt"")",os模块删除文件
+126,os.rename(old，new)(os.renames，既可以重命名文件， 也可以重命名文件的上级目录名),os模块重命名文件或目录
+127,"os.system(""calc"")",os模块打开系统的计算器
+128,"os.walk(r""D:\\python"")",os模块递归返回该目录下所有子目录为三元组：（路径，[包含目录局]，[包含文件]）
+129,"os.path.basename(r""D:\\python\\python\\01.py"")",os模块去掉目录路径，单独返回文件名
+130,"os.path.dirname(r""D:\\python\\python\\01.py"")",os模块去掉文件名，单独返回文件路径
+131,"os.path.join(r""D:\python\python""，""test.txt"")",os模块将路径名与文件名合并
+132,"s.path.split(r""D:\python\python\test.txt"")",os模块将路径名与文件名拆分为元组
+133,"os.path.splitext(r""D:\python\python\1.txt"")",os模块分离目录名+文件名与文件拓展名为二元组
+134,"os.path.getsize(""./test.py"")",os模块获取文件的大小
+135,"os.path.getatime(""./test.py"")",os模块返回文件的最后访问时间（浮点型秒数）
+136,time.localtime(time),time模块对毫秒数据格式化
+137,"time.strftime(""%Y %b %d %H:%M:%S""，time.localtime(time))",time模块格式化输出时间（年月日，时分秒）
+138,"os.path.getctime(""./test.py"")",os模块返回文件的创建时间
+139,"os.path.getmtime(""./test.py"")",os模块返回文件的最后修改时间
+140,"os.path.isabs(""./test.py"")",os模块判断当前路径是否是绝对路径
+141,"os.path.exists(r""D:\\python\\python\\test.py"")",os模块判断路径或文件是否存在
+142,"os.path.isdir(r""D:\\python\\python"")",os模块判断目录文件是否存在且是目录
+143,"os.path.isfile(r""D:\\python\\python\\test.py"")",os模块判断目录文件是否存在且是文件
+144,"os.path.islink(r""D:\\python\\python\\test.py"")",os模块判断文件是否是符号链接
+145,"os.path.ismount(r""D:\\python\\python"")",os模块判断目录是否存在且是一个挂载点
+146,os.path.samefile(path1，path2),判断两个路径是否指向同一个文件
+147,"f = open(""zk.pkl""， ""wb"")；pickle.dump(l，f)；f.close",pickle模块将列表数据导入文件
+148,"f = open(""zk.pkl""， ""rb+"")；list = pickle.load(f)；f.close",pickle模块从pkl文件导入数据到列表
+149,"with open(""./2.txt""，""r"") as f:",with语句打开文件
+150,issubclass(B，A),判断ClassB是否是ClassA的子类
+151,isinstance(b1，B),判断实例b1是否是ClassB的实例
+152,"hasattr(b1，""x"")",判断实例b1继承的类是否有x属性
+153,"getattr(b1，""x""[，0])",获取实例类b1属性x的值，不存在则返回默认值0
+154,"setattr(b1，""y""，100)",给实例b1添加属性值y=100
+155,"delattr(b1，""y"")",删除实例b1的y属性
+156,def __init__(self[，...]):,初始化函数构造的方法（构造器）
+157,def __new__(cls[，...]):,返回cls实例化对象（构造器）
+158,def __del__(self[，...]):,对象删除方法（析构器）
+159,def __add__(self， other):,定义对象的私有加法
+160,def __sub__(self， other):,定义对象的私有减法
+161,def __mul__(self， other):,定义对象的私有乘法
+162,def __truediv__(self， other):,定义对象的私有真除法
+163,def __floordiv__(self， other):,定义对象的私有整除法
+164,def __mod__(self， other):,定义对象的私有取模算法
+165,it=iter(string);next(it),创建字符串迭代器
+166,a = [i for i in range(100) if not (i % 2 ) and i % 3],列表推导式
+167,list = sys.path,sys模块显示路径为列表
+168,sys.path.append(dir),sys模块添加路径
+169,dir(list),查看List定义了哪些变量、函数和类
+170,time.sleep(1),time模块暂停1秒
